@@ -1,0 +1,256 @@
+*{
+    margin:0px;
+    padding:0px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display:flex;
+    width: 100%;
+}
+header{
+    display: flex;
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    padding: 25px;
+    color:white;
+    background-color:rgb(52, 173, 177);
+}
+.links{
+    width: fit-content;
+    padding: 5px;
+    margin-left: 41.5rem;
+}
+.links li{
+    display: inline-block;
+    margin: 0px 20px;
+    font-size: larger;
+}
+.links li:hover{
+    padding-bottom: 5px;
+    border-bottom: solid 1px rgb(182, 181, 181); 
+}
+.links a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    margin-top: 65px;
+    width: 100%;
+    height: fit-content;
+}
+.imagebar{
+    width: 100%;
+    height: 25rem;
+    background: url("../image/customer/hpimagebar.webp") no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 82%;
+    border: solid 1px black;
+}
+.category{
+    display: grid;
+    text-align: center;
+}
+.sertitle{
+    padding: 10px;
+    margin: 0px auto;
+}
+.sertitle h2{
+    width: fit-content;
+    border-bottom: solid 1px goldenrod;
+    padding: 5px;
+}
+.categorylist{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.servicebox{
+    border: solid 1px black;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+}
+.servicebox img{
+    background-attachment: fixed;
+    width: 80%;
+    background-color: transparent;
+}
+.offerview{
+    display: flex;
+    padding: 65px;
+    background: url("https://cdn2.vectorstock.com/i/1000x1000/05/51/abstract-geometric-shape-technology-digital-hi-vector-48080551.jpg");
+}
+.offerquote{
+    display: grid;
+    width: 400px;
+    height: 320px;
+    word-spacing: 5px;
+    row-gap: 25px;
+    text-align:start;
+    margin-right: 40px
+}
+.offerquote p{
+    text-align: justify;
+    word-spacing:1px;
+    row-gap: 50px;
+}
+.offerquote button{
+    width: 150px;
+    padding: 12px;
+    background-color: rgb(12, 177, 177);
+    color: white;
+    font-size: medium;
+}
+.offerbox{
+    display: grid;
+    width: 300px;
+    height: 320px;
+    padding: 120px 30px;
+    row-gap: 15px;
+    background-attachment: fixed;
+    font-weight:bolder;
+    color:black;
+}
+.offerbox1{
+    background: url("https://static.wixstatic.com/media/073bb5_a5b87a46bfac4a88a87452729c3fcfea~mv2.jpg");
+    background-size: 100% 100%;
+}
+.offerbox2{
+    background: url("https://www.servicefusion.com/wp-content/uploads/2022/10/GettyImages-1218688951-scaled.jpg");
+    background-size: 100% 100%;
+}
+.offerbox3{
+    background: url("https://empire-s3-production.bobvila.com/articles/wp-content/uploads/2022/09/Window-Glass-Replacement-Cost-Factors.jpg");
+    background-size: 100% 100%;
+}
+.servicelist{
+    height: 350px;
+    padding: 30px;
+    display:grid;
+    margin: 20px 0px;
+}
+.list{
+    display: flex;
+    margin: 25px;
+    gap:20px;
+    height: fit-content;
+}
+.box{
+    border: solid 1px black;
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box img{
+    width: 100%;
+    height: 90%;
+}
+.fourbox{
+    border: solid 1px greenyellow;
+    width: fit-content;
+    display:flex;
+    flex-wrap: wrap;
+    background: url("https://cdn2.vectorstock.com/i/1000x1000/05/51/abstract-geometric-shape-technology-digital-hi-vector-48080551.jpg") no-repeat;
+    background-size: 100% 120%;
+    padding: 20px 35px;
+    gap:10px;
+}
+.fbox{
+    height: 250px;
+    width: 600px;
+    display: flex;
+    margin: 10px;
+    box-shadow: 0px 0px 35px rgb(209, 208, 208);
+}
+.fsubbox{
+    width: 500px;
+    display: grid;
+    background-color: white;
+}
+.fbox img{
+    height: 100%;
+    width: 100%;
+}
+.fboxtext{
+    padding: 25px;
+    gap:10px;
+}
+.fboxtext a{
+    text-decoration: none;
+    color: cornflowerblue;
+    font-size:larger;
+    border-bottom: solid 1px cornflowerblue;
+    width: 100px;
+    padding-bottom: 5px;
+}
+.messagebox{
+    height: 80vh;
+    background: url("https://www.caretochange.com.au/wp-content/uploads/2022/10/shutterstock_2067737414-1920x1080.jpg") no-repeat;
+    background-size: 60% 180%; 
+    margin-bottom: 50px;
+}
+.mess{
+    display: grid;
+    box-shadow: 0px 0px 10px rgb(116, 114, 114) ;
+    width: 33.5rem;
+    margin-left: 50.2rem;
+    text-align: center;
+    padding: 60px 0px;
+    gap:25px;
+    background-color: white;
+    height: 80vh;
+}
+.mess form{
+    display: flex;
+    width: 33.5rem;
+    height: 23rem;
+    padding: 10px 20px;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.mess form input{
+    border: solid 1px rgb(128, 125, 125);
+    box-shadow: 0px 0px 2px black;
+    height: 2rem;
+    width: 15rem;
+    text-align: center;
+}
+#messagebox{
+    width: 31rem;
+    height: 8rem;
+}
+.mess form button{
+    margin: 0px auto;
+    width: 10rem;
+    background-color: teal;
+    color: white;
+    font-size: large;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 5px rgb(94, 93, 93);
+}
+.flist{
+    text-align: left;
+    width: 11.1rem;
+    padding: 10px;
+    margin-left: 3rem;
+}
+.flist li{
+    list-style: none;
+    padding-top: 20px;
+    color: rgb(75, 69, 69);
+    font-size: larger;
+}
