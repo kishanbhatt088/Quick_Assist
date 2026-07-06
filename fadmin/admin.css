@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding:0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    width: 100%;
+    background-color: #f8f7fa;
+}
+.sidebar{
+    position: sticky;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background-color: white;
+    box-shadow: 0px 0px  10px rgb(175, 173, 173);
+}
+.sidebar:hover{
+    width: 210px;
+    transition: 0.5s;
+}
+.logo{
+    height: 80px;  
+    padding: 16px;
+}
+.menubar{
+    height:88%;
+    position: relative;
+    list-style: none;
+    padding: 0px;
+    margin-top: 10px;
+}
+.menubar li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menubar li:hover {
+    background:rgba(138, 138, 138, 0.158) ;
+}
+.menubar a{
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items:center;
+    gap:0.8rem;
+}
+.menubar a span{
+    overflow: hidden;
+}
+.menubar a i ,header i{
+    font-size: 1.3rem;
+}
+.logout{
+   position: absolute; 
+   bottom:0;
+   left:0;
+   width:100%;
+}
+header{
+    position: fixed;
+    display: flex;
+    margin:15px 220px ;
+    width: 80%;
+    height: 8vh;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px  10px rgb(175, 173, 173);
+}
+.searchbar{
+    border: solid 1px gainsboro;
+    height: 4vh;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+.searchbar input{
+    height:3.5vh;
+    margin-left: 5px;
+}
+.searchbar i{
+    font-size: 1rem;
+    color: black;
+}
+
+.headerlink{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    gap: 30px;
+    justify-content: left;
+
+}
+.admin{
+    display: flex;
+    gap: 10px;
+}
+.admin img{
+    border: solid 1px rgb(66, 63, 63);
+    padding: 3px;
+    height: 40px;
+    border-radius: 35px;
+    margin-top: -5px;
+}
+/* main contant css start from above*/
+main{
+    margin-top: 100px;
+    margin-left:120px;
+    width: 80%;
+    font-family:sans-serif;
+    font-size: 25px;
+    color: rgb(107, 107, 107);
+    overflow-x: hidden;
+}
+/*Dashboard page css*/
+.dashbox{
+    height: fit-content;
+    padding: 15px 0px;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+.reportbox{
+    width: 14rem;
+    height: 6rem;
+    display: flex;
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(158, 155, 155);
+    border: solid 1px rgb(179, 179, 179);
+    color: black;
+    background-color: rgb(252, 251, 251);
+}
+.dashbox i{
+    font-size:2.9rem;
+    margin: 15px;
+    color: cadetblue;
+}
+.leftdashbox{
+    height:5rem;
+    width: 8rem;
+    margin-top: 15px;
+    display: grid;
+    color: rgb(45, 46, 46);
+}
+.leftdashbox i{
+    font-size: 1.2rem;
+    color: black;
+    margin: 10px;
+}
+.leftdashbox h6{
+    color: gray;
+}
+/* service table page  css*/
+.tableview{
+    width: 1070px;
+    margin: 10px 0px;
+    box-shadow: 0px 0px  10px rgb(175, 173, 173);
+    border-radius: 5px;
+    background-color: white;
+}
+.heading{
+    display: flex;
+    padding: 8px;
+    border: solid 1px rgb(175, 173, 173);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.heading a i{
+    margin-right:10px;  
+}
+.tablesearchbox{
+    display: flex;
+    border: solid 1px darkgray;
+    padding: 5px;
+    border-radius: 5px;
+    height: 30px;
+    margin-left: 30px;
+    width: 200px;
+}
+.tablesearchbox i{
+    font-size:1.2rem;
+    margin-right: 5px;
+}
+table{
+    width: 1060px;
+    border-collapse: collapse;
+    font-size: medium;
+    color: rgb(58, 56, 56);
+}
+table td{
+    padding: 5px 10px;
+    border-bottom: solid 1px darkgray;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+    width: fit-content;
+    height: 8vh;
+}
+a{
+    color: #030303;
+}
+.heading a{
+    margin-left: 680px;
+}
+.tableview a{
+    text-decoration: none;
+    color: #030303;
+    border:solid 1px black;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 15px;
+    width: fit-content;
+    height: 30px;
+    padding: 5px;
+}
+/*insert service form*/
+.forms{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    display: flex;
+    margin: 0px 320px;
+}
+#insertform{
+    display: none;
+}
+.insertform{
+    width: 500px;
+    margin: 20px  0px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgb(163, 162, 162);
+    color: rgb(63, 62, 62);
+}
+.insertform form{
+    font-size: 14px;
+    padding: 15px 0px;
+    display: grid;
+    row-gap: 5px;
+}
+.insertform form input{
+    border: solid 1px gray;
+    margin: 5px 0px;
+    height: 5vh;
+    width: 25rem;
+    border-radius: 5px;
+    padding: 0px  5px;
+}
+.insertform .input{
+    display: grid;
+}
+.fieldinput{
+    display: flex;
+    gap: 70px;
+}
+.fieldinput .input input{
+    width:10rem;
+}
+.decimbox .input input{
+    height: 30vh;
+}
+#img{
+    padding: 140px;
+    color: #f8f7fa;
+    margin-bottom: 20px;
+}
+#insertservicebtn{
+    width: 5rem;
+    height: 2rem;
+    margin:10px 160px;
+    color: white;
+    border-radius: 5px;
+    background-color: teal;
+    font-size: 15px;
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+/* update service form*/
+#updateservice{
+    padding: 10px;
+    background-color: white;
+    width: 30rem;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+#updateservice form{
+    display: grid;
+    row-gap: 10px;
+}
+.show {
+    display: grid;
+    row-gap: 10px;
+    width: 10rem;
+}
+.show input{
+    width: 11rem;
+    height: 4vh;
+    border: solid 1px black;
+    border-radius: 3px;
+    padding: 5px;
+}
+#updateservice form{
+    font-size: medium;
+    padding: 20px;
+    margin-top: 10px;
+}
+#updateservice form button{
+    width: 8rem;
+    padding: 5px;
+    margin: 5px 120px;
+    background-color: rgb(7, 141, 141);
+    color:white;
+}
+.uinline{
+    display: flex;
+    gap: 65px;
+    margin-bottom: 10px;
+}
+.uimgdes input{
+    height: 5rem;
+}
+#uimg{
+    color: white;
+    padding: 30px;
+}
+#serimg{
+    position: absolute;
+    width: 10rem;
+    margin-top: 2rem;
+    margin-left: 15rem;
+}
+/* apppointment details box*/
+.appointmentbox{
+    border: solid 3px gainsboro;
+    margin: 10px auto;
+    display:flex ;
+    flex-wrap: wrap;
+    gap: 10px 70px;
+    width: 35rem;
+    background-color: white;
+    padding: 5px;
+}
+.applable{
+    display: flex;
+    margin: 10px 10px;
+    padding: 5px;
+}
+.address{
+    height: fit-content;
+}
+.applable lable{
+    font-size: medium;
+    margin-right: 5px;
+}
+.appointmentbox input{
+    border: solid 1px black;
+}
+.appointmentboxbtn{
+    margin-left: 15rem;
+    padding: 5px;
+    width: 80px;
+    background-color: teal;
+    color: white;
+}
+.deliveryboylist{
+    border: solid 1px gray;
+    width: 55rem;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 30px;
+    margin:50px auto;
+    background-color: white;
+}
+/*
+.deliverboybox{
+    border: solid 1px rgb(7, 141, 141);
+    width: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 5px;
+    margin: 0px;
+}
+.deliverboybox:hover{
+    width: 15rem;
+}
+.deliverboybox img{
+    width: 8rem;
+    height: 8rem;
+}
+.deliverboybox .applable{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}*/
